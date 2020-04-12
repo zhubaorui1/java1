@@ -22,9 +22,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql:///test02?useUnicode=true&amp;characterEncoding=utf8
+    url: jdbc:mysql://106.12.35.60:3306/test02?useUnicode=true&amp;characterEncoding=utf8
     username: root
-    password: 111
+    password: 453486495zbr
 
 eureka:
   # 指定eureka服务中心
