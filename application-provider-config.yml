@@ -30,7 +30,7 @@ eureka:
   # 指定eureka服务中心
   client:
     service-url:
-      defaultZone: http://eureka8400.com:8400/eureka
+      defaultZone: http://eureka8300.com:8300/eureka
 
 ---
 # 配置test环境
