@@ -1,0 +1,41 @@
+
+server:
+  port: 8401
+spring:
+  profiles: dev
+  application:
+    name: xd-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8101/eureka,http://localhost:8102/eureka
+
+zuul:
+  routes:
+    xd-depart:
+      service-id: dx-consumer-depart
+      path: /comde/**
+  prefix: /pre
+  #表示我们忽略所有默认匹配的path。只能路由到我们手动配置的路劲。
+  ignored-services: "*"
+---
+server:
+  port: 8402
+spring:
+  profiles: dev1
+  application:
+    name: xd-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8101/eureka,http://localhost:8102/eureka
+
+zuul:
+  routes:
+    xd-depart:
+      service-id: dx-consumer-depart
+      path: /comde1/**
+  prefix: /pre
+  #表示我们忽略所有默认匹配的path。只能路由到我们手动配置的路劲。
+  ignored-services: "*"
+
