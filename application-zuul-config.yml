@@ -14,7 +14,7 @@ zuul:
   routes:
     xd-depart:
       service-id: dx-consumer-depart
-      path: /comde/**
+      path: /comde1/**
   prefix: /pre
   #表示我们忽略所有默认匹配的path。只能路由到我们手动配置的路劲。
   ignored-services: "*"
